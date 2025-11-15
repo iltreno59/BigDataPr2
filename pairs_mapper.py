@@ -13,7 +13,7 @@ if __name__ == "__main__":
     order_items = []
     order_id = 0
     for line in sys.stdin:
-        if line.startswith("order_id"):
+        if line.startswith("order_item_id"):
             continue
         parts = line.strip().split(",")
         if parts[1] != order_id:
