@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 import sys
 
-def reduce_input():
+def reduce():
     current_pair = None
     current_count = 0
     for line in sys.stdin:
@@ -28,4 +28,4 @@ def reduce_input():
         print(f"{current_pair}\t{current_count}")
 
 if __name__ == "__main__":
-    reduce_input()
+    reduce()
