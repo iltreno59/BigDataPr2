@@ -1,0 +1,41 @@
+laptop mouse
+laptop mouse laptop_case
+laptop laptop_case headphones
+laptop mouse keyboard
+laptop monitor keyboard mouse
+laptop monitor
+laptop laptop_case
+mouse keyboard
+mouse mouse_pad
+keyboard mouse_pad
+monitor hdmi_cable
+monitor display_port_cable
+monitor hdmi_cable display_port_cable
+printer usb_cable paper
+printer ink paper
+printer usb_cable
+tablet tablet_case stylus
+tablet tablet_case
+tablet stylus
+phone phone_case charger
+phone screen_protector
+phone charger headphones
+phone phone_case
+camera memory_card tripod
+camera memory_card
+camera lens_cleaner
+headphones carrying_case
+headphones bluetooth_adapter
+router ethernet_cable
+router wifi_extender
+laptop router ethernet_cable
+laptop docking_station
+laptop cooling_pad
+mouse mouse_pad usb_hub
+keyboard wrist_rest
+monitor monitor_stand
+priver scanner
+tablet bluetooth_keyboard
+phone power_bank
+camera camera_bag
+headphones ear_pads

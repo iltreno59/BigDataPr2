@@ -2,8 +2,8 @@
 import sys
 
 def reduce():
-    current_pair = None
-    current_count = 0
+    pair_counts = {}
+    
     for line in sys.stdin:
         line = line.strip()
         if not line:
@@ -11,21 +11,14 @@ def reduce():
         try:
             pair, count = line.split("\t")
             count = int(count)
+            if pair in pair_counts.keys():
+                pair_counts[pair] += count
+            else:
+                pair_counts[pair] = count
         except ValueError:
             continue
-
-        if current_pair is None:
-            current_pair = pair
-            current_count = count
-        elif pair == current_pair:
-            current_count += count
-        else:
-            print(f"{current_pair}\t{current_count}")
-            current_pair = pair
-            current_count = count
-
-    if current_pair is not None:
-        print(f"{current_pair}\t{current_count}")
+    for item in pair_counts.items():
+        print(f"{item[0]}\t{item[1]}")
 
 if __name__ == "__main__":
     reduce()

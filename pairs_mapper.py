@@ -2,25 +2,21 @@
 import sys
 
 def map(order):
-    for item_i in order:
-        for item_j in order:
-            if item_i != item_j:
-                print(f"{item_i},{item_j}\t1")
+    if not order:
+        return
+    items = [item.strip() for item in order.split(' ') if item.strip()]
+    if len(items) > 1:
+        for i in range(0, len(items) - 1):
+            for j in range(i + 1, len(items)):
+                if items[i] and items[j]:
+                    if items[i] < items[j]:
+                        print(f"{items[i]},{items[j]}\t1")
+                    else: 
+                        print(f"{items[j]},{items[i]}\t1")
 
 
 if __name__ == "__main__":
-    orders = []
-    order_items = []
-    order_id = 0
     for line in sys.stdin:
-        if line.startswith("order_item_id"):
-            continue
-        parts = line.strip().split(",")
-        if parts[1] != order_id:
-            if len(order_items) >= 1:
-                orders.append(order_items)
-            order_items = []
-            order_id = parts[1]
-        order_items.append(parts[2])
-    for order in orders:
-        map(order)
+        line = line.strip()
+        map(line)
+        

@@ -1,0 +1,9 @@
+cpu,gpu	2
+cpu,monitor	1
+gpu,monitor	1
+headphones,keyboard	4
+headphones,mic	6
+headphones,mouse	4
+keyboard,mic	4
+keyboard,mouse	7
+mic,mouse	4
